@@ -6,8 +6,9 @@ body {
   font-family: "Monserrat", sans-serif;
   margin: 0;
 }
+
 #product-overview {
-  background: blue;
+  background: url("freedom.jpg");
   padding: 10px;
 
   width: 100%;
@@ -20,7 +21,7 @@ h1 {
 }
 
 h1::first-letter {
-  color: red;
+  color: black;
   font-size: 55px;
 }
 
@@ -63,20 +64,26 @@ body {
   padding-bottom: 2px;
 }
 
-.main-nav___item--cta a {
-  ""
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
-.main-nav__item a:hover::after {
-  content: " :-)";
-  color: white;
-}
+
 
 .main-nav__item a:active,
 .main-nav__item a:hover {
   color: white;
-  font-weight: bold;
   border-bottom: 2px solid red;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
 }
 
 .main-header > div {
