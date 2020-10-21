@@ -25,6 +25,7 @@
 .first-box:hover {
   background-color: red;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -41,4 +42,12 @@ body,
 main,
 html {
   height: 100%;
+}
+
+p.active {
+  background: red;
+}
+
+p .active {
+  background: blue;
 }
