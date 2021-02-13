@@ -1,163 +1,250 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 #product-overview {
-    background: url("freedom.jpg");
-    width: 100%;
-    height: 528px;
-    padding: 10px;   
+  background: url("freedom.jpg");
+  width: 100%;
+  height: 528px;
+  padding: 10px;
 }
 
 .section-title {
-    color: #2ddf5c;
-    text-align:center;
+  color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
-    color: white;
-    font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: "Anton", sans-serif;
 }
 
 .plan {
-    background-color: #d5ffcc;
-    border-radius: 3px;
-    text-align: center;
-    padding: 16px;
-    margin: 8px; 
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle; 
+  background-color: #d5ffcc;
+  border-radius: 3px;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
 }
 
 .plan--highlighted {
-    background-color: teal;
-    color: white;
-    box-shadow: 6px 21px 8px 5px rgba(1,1,1,.5);
-    -webkit-transition: transform 1s;
-    transition: transform 1s ;
+  background-color: teal;
+  color: white;
+  box-shadow: 6px 21px 8px 5px rgba(1, 1, 1, 0.5);
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
 }
 
-.plan--highlighted:hover{
-    transform: scale(1.05,1.05);
+.plan--highlighted:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .plan__annotation {
-    background-color: white;
-    border-radius: 3px;
-    color: rgb(14, 65, 78);
-    box-shadow: 4px 2px 3px 2px rgba(1,1,1,.5);
+  background-color: white;
+  border-radius: 3px;
+  color: rgb(14, 65, 78);
+  box-shadow: 4px 2px 3px 2px rgba(1, 1, 1, 0.5);
 }
 /* h1 {
     font-family: sans-serif;
 } */
 
 .main-header {
-    width: 100%;
-    background: #2ddf5c;
-    padding: 8px 16px;
+  width: 100%;
+  background: #2ddf5c;
+  padding: 8px 16px;
 }
 
 .main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-    vertical-align: middle;
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
 }
 
 .main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__item {
-    display: inline-block;
-    margin: 0 16px;
+  display: inline-block;
+  margin: 0 16px;
 }
 
 .main-nav__item a {
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    padding: 3px 0;
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-    color: white;
-    border-bottom: 5px solid white;
+  color: white;
+  border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
-    color: white;
-    background: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px;
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-    color: #ff1b68;
-    background: white;
-    border: none;
+  color: #ff1b68;
+  background: white;
+  border: none;
 }
 
 .plan__title {
-    color:#0e4f1f
+  color: #0e4f1f;
 }
 
 .plan--highlighted .plan__title {
-    color: white;
+  color: white;
 }
 .plan__price {
- color: rgba(29, 27, 27, 0.5)
+  color: rgba(29, 27, 27, 0.5);
 }
 
 .plan__features {
-    list-style: none;
-    margin: 0;
-    padding: 0; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .plan__features li {
-margin-bottom: 6px; 
+  margin-bottom: 6px;
 }
 
 .button {
-    background-color: black;
-    color: white;
-    font: inherit;
-    border: 1.5px solid white; 
-    border-radius: 2px;
-    cursor:pointer;
-    font-weight: 500;
+  background-color: black;
+  color: white;
+  font: inherit;
+  border: 1.5px solid white;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 500;
 }
-.button:focus{
-    background-color: grey;
-    border-color: darkblue;  
-    outline: none;
-    }
-    
-.button:hover{
-background-color: grey;
-
+.button:focus {
+  background-color: grey;
+  border-color: darkblue;
+  outline: none;
 }
 
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+/* elements sit next to other
+make white and bold */
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+/* .key-features__list li {
+  display: inline-block;
+  font-weight: bold;
+  padding-left: 10px;
+} */
+
+.key-features__list li {
+  display: inline-block;
+  width: 30%;
+  vertical-align: text-top;
+}
+.key-features__list div {
+  background: lightpink;
+  height: 128px;
+  width: 128px;
+  border: 1px black solid;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.key-features__list div:focus {
+  height: 50px;
+  width: 50px;
+  transition: 2s;
+  outline: none;
+}
+.key-features__list div:not(:focus) {
+  transition: 2s;
+  outline: none;
+}
+
+.key-features__list p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.key-features__list {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  /* margin-top: 48px; */
+  /* margin-top: 0; */
+}
+
+.main-footer ul {
+  /* margin-top: 0px; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer li {
+  display: inline-block;
+  margin: 0 16px;
+
+  /* list-style: none; */
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer a:active,
+.main-footer a:hover {
+  color: #ccc;
+}
